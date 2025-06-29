@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: drones-app
+  name: guestbook-ui
 spec:
   revisionHistoryLimit: 3
   progressDeadlineSeconds: 30
   selector:
     matchLabels:
-      app: drones-app
+      app: guestbook-ui
   template:
     metadata:
       labels:
-        app: drones-app
+        app: guestbook-ui
     spec:
       containers:
-      - name: drones-app
-        image: us-central1-docker.pkg.dev/ai-powered-btos/registry/drones-api:1.0
+      - name: guestbook-ui
+        image: gcr.io/google-samples/gb-frontend:v4
         resources:
           requests:
             cpu: 100m
