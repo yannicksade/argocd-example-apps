@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: guestbook-ui
-        image: gcr.io/google-samples/gb-frontend:v4
+        image: us-central1-docker.pkg.dev/ai-powered-btos/registry/drones-api:1.0
         resources:
           requests:
             cpu: 100m
