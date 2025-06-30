@@ -13,6 +13,7 @@ spec:
       labels:
         app: guestbook-ui
     spec:
+      serviceAccountName: btos-apps-sa
       containers:
       - name: guestbook-ui
         image: k8s.gcr.io/guestbook/php-redis-frontend:v3.0.1
