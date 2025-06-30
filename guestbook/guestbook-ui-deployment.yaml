@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: guestbook-ui
-        image: gcr.io/google-samples/gb-frontend:v4
+        image: k8s.gcr.io/guestbook/php-redis-frontend:v3.0.1
         resources:
           requests:
             cpu: 100m
