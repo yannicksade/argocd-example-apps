@@ -16,7 +16,7 @@ spec:
       serviceAccountName: btos-apps-sa
       containers:
       - name: guestbook-ui
-        image: k8s.gcr.io/guestbook/php-redis-frontend:v3.0.1
+        image: "us-central1-docker.pkg.dev/ai-powered-btos/registry/drones-api:1.0"
         resources:
           requests:
             cpu: 100m
