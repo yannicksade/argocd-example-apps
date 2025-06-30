@@ -13,6 +13,7 @@ spec:
       labels:
         app: guestbook-ui
     spec:
+      serviceAccountName: argocd-repo-server
       containers:
       - name: guestbook-ui
         image: us-central1-docker.pkg.dev/ai-powered-btos/registry/drones-api:1.0
